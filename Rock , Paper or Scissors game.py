@@ -1,14 +1,14 @@
 import random
 
-options = ("rock", "paper", "scissors")
+choices = ("rock", "paper", "scissors")
 running = True
 
 while running:
 
     player = None
-    computer = random.choice(options)
+    computer = random.choice(choices)
 
-    while player not in options:
+    while player not in choices:
         player = input("Enter a choice (rock, paper, scissors): ")
 
     print(f"Player: {player}")
